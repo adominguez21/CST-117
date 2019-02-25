@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxQuant = new System.Windows.Forms.GroupBox();
             this.rB20 = new System.Windows.Forms.RadioButton();
@@ -252,6 +253,7 @@
             // 
             // txtSurname
             // 
+            this.txtSurname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtSurname.Location = new System.Drawing.Point(634, 12);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(195, 22);
@@ -259,6 +261,8 @@
             // 
             // cmbOrderMade
             // 
+            this.cmbOrderMade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmbOrderMade.ForeColor = System.Drawing.Color.Blue;
             this.cmbOrderMade.FormattingEnabled = true;
             this.cmbOrderMade.Location = new System.Drawing.Point(634, 66);
             this.cmbOrderMade.Name = "cmbOrderMade";
@@ -268,6 +272,8 @@
             // 
             // txtCustomerID
             // 
+            this.txtCustomerID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtCustomerID.ForeColor = System.Drawing.Color.Blue;
             this.txtCustomerID.Location = new System.Drawing.Point(210, 12);
             this.txtCustomerID.Name = "txtCustomerID";
             this.txtCustomerID.Size = new System.Drawing.Size(195, 22);
@@ -275,6 +281,7 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtName.Location = new System.Drawing.Point(210, 66);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(195, 22);
@@ -282,6 +289,7 @@
             // 
             // cmbType
             // 
+            this.cmbType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cmbType.FormattingEnabled = true;
             this.cmbType.Location = new System.Drawing.Point(1162, 64);
             this.cmbType.Name = "cmbType";
@@ -291,6 +299,11 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.Blue;
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Yellow;
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Blue;
             this.dateTimePicker1.Location = new System.Drawing.Point(1162, 14);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(194, 22);
@@ -393,6 +406,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1495, 663);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.btnClear);
@@ -413,8 +428,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
+            this.ForeColor = System.Drawing.Color.Violet;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lola\'s Boutique";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.groupBoxQuant.ResumeLayout(false);
